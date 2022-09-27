@@ -1,0 +1,47 @@
+.card{
+    height: 50vh;
+    margin: 40px;
+    padding: 20px;
+}
+
+.center img{
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    outline: none;
+    height: 170px;
+    width: 150px;
+    margin: 20px 0px;
+    padding-bottom: 50px;
+}
+
+.center{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-table{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: none;
+    word-wrap: break-word;
+    background-color: white;
+    background-clip: border-box;
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.center .btn{
+    margin-top: 20px;
+    font-weight: 500;
+    padding: 10px 70px;
+    border-radius: 5px;
+}

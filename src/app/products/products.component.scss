@@ -1,0 +1,48 @@
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #fff;
+    background-clip: border-box;
+    border: 1px solid black;
+    border-radius: .25rem;
+}
+.item img{
+    width: 60px;
+}
+
+.item{
+    margin: 0px 15px;
+    text-align: center;
+}
+
+.item:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+h5{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+}
+
+.description{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+}
+
+.image{
+    max-width: 70%;
+    height: 250px;
+}
+
+.card{
+    padding: 10px;
+    margin: 50px;
+}

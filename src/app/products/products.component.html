@@ -1,0 +1,43 @@
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img style="width: 75px;" src="https://unmiss.com/wp-content/uploads/2019/09/consumer-products.png" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('electronics')">
+                <img src="https://cdn-icons-png.flaticon.com/512/3202/3202705.png" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('fashion')">
+                <img src="https://cdn-icons-png.flaticon.com/512/3205/3205424.png" alt="">
+                <h6>Fashion</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filter('jewelery')">
+                <img src="https://cdn-icons-png.flaticon.com/512/2237/2237677.png" alt="">
+                <h6>Jewelery</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let product of productList | filter:searchKey:'title'">
+           <div class="card col-md-3">
+                <img [src]="product.image" class="image">
+                <h5>{{ product.title }}</h5>
+                <p class="description">{{ product.description }}</p>
+                <p><strong>Price: </strong>{{ product.price }} $</p>
+                <button class="btn btn-primary" (click)="onAddProduct(product)">Add to cart</button>
+            </div> 
+        </ng-container>
+        
+    </div>
+</div>
